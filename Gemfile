@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+
+
 gem 'rails',        '5.1.6'
 gem 'puma',         '3.9.1'
 gem 'sass-rails',   '5.0.6'
@@ -9,6 +11,7 @@ gem 'jquery-rails', '4.3.1'
 gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
+gem 'bootstrap-sass', '3.3.7'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
