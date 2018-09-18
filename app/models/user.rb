@@ -11,5 +11,12 @@ class User < ApplicationRecord
 
 
 
+   # 渡された文字列のハッシュ値を返すPWを設定する時に必要（クラスメソッド）
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
 
 end
