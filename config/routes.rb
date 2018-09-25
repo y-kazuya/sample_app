@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]#user認証（リンクを踏むだけやからeditで！）
   resources :password_resets,     only: [:new, :create, :edit, :update]#PW再設定
+  resources :microposts,          only: [:create, :destroy]
 end
