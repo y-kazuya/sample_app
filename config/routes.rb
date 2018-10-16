@@ -15,6 +15,10 @@ Rails.application.routes.draw do
     member do     #users/user_id/followingとかになる       memberじゃなくて collectionやったらidで区別しない
       get :following, :followers
     end
+
+    collection do
+      get :search
+    end
   end
   resources :account_activations, only: [:edit]#user認証（リンクを踏むだけやからeditで！）
   resources :password_resets,     only: [:new, :create, :edit, :update]#PW再設定

@@ -1,6 +1,11 @@
 <% provide(:title, 'All users') %>
 <h1>All users</h1>
-
+  <p> User search </p>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <ul class="users" id ="search_list">
+    </ul>
+  </p>
 <%= will_paginate %>
 
 <ul class="users">

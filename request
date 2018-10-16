@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+<title>Fly 2 Moon</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="aI2rxHKQpbGLvkQ/J2YrOXve3hT3bIDCZiJMk7kM9YHvAhsVj2TpR0H/npixBMhG5mKClLrCsb5vjO/4HGMwzQ==" />
+<script>
+//<![CDATA[
+window.gon={};
+//]]>
+</script>
+<link rel="stylesheet" media="all" href="/assets/application-752e1db8113c81072f88d3fc44ad89d0db1ae57b2043590660e7d408803dab9d.css" />
+<script src="/assets/application-50a5d663eb21b3bd76f8675f34a2484027202ecdc5cf6fa481cfa4b768fedb76.js"></script>
+</head>
+<body>
+<div class='LogsContainer'>
+<a class="page-arrow left-arrow" id="lineModal-arrow-left-hide" rel="next" href="/?page=2"><i class="fa fa-arrow-circle-left fa-5x"></i></a>
+
+
+<div class='Logs'>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.27
+</p>
+<a class="Log__header--icon" href="/studys/57"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>16h</p>
+<p class='Log__body--rate'>
+★
+★
+★
+★
+★
+</p>
+</div>
+<div class='Log__footer'>
+</div>
+</div>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.26
+</p>
+<a class="Log__header--icon" href="/studys/56"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>16h</p>
+<p class='Log__body--rate'>
+</p>
+</div>
+<div class='Log__footer'>
+<ul></ul>
+<li class='Log__footer--list'>
+javascript
+</li>
+</div>
+</div>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.08
+</p>
+<a class="Log__header--icon" href="/studys/54"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>12h</p>
+<p class='Log__body--rate'>
+★
+★
+★
+★
+</p>
+</div>
+<div class='Log__footer'>
+<ul></ul>
+<li class='Log__footer--list'>
+rails
+</li>
+<li class='Log__footer--list'>
+javascript
+</li>
+<li class='Log__footer--list'>
+jquary
+</li>
+</div>
+</div>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.07
+</p>
+<a class="Log__header--icon" href="/studys/53"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>14h</p>
+<p class='Log__body--rate'>
+★
+★
+★
+★
+</p>
+</div>
+<div class='Log__footer'>
+<ul></ul>
+<li class='Log__footer--list'>
+rails
+</li>
+<li class='Log__footer--list'>
+javascript
+</li>
+<li class='Log__footer--list'>
+jquary
+</li>
+</div>
+</div>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.06
+</p>
+<a class="Log__header--icon" href="/studys/52"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>11h</p>
+<p class='Log__body--rate'>
+★
+★
+★
+★
+</p>
+</div>
+<div class='Log__footer'>
+<ul></ul>
+<li class='Log__footer--list'>
+rails
+</li>
+<li class='Log__footer--list'>
+javascript
+</li>
+<li class='Log__footer--list'>
+jquary
+</li>
+</div>
+</div>
+<div class='Log'>
+<div class='Log__header'>
+<p class='Log__header--date'>
+2018.09.05
+</p>
+<a class="Log__header--icon" href="/studys/51"><i class="fa fa-arrow-circle-right fa-lg"></i>
+</a></div>
+<div class='Log__body'>
+<p class='Log__body--time'>10h</p>
+<p class='Log__body--rate'>
+★
+★
+★
+</p>
+</div>
+<div class='Log__footer'>
+<ul></ul>
+<li class='Log__footer--list'>
+rails
+</li>
+</div>
+</div>
+</div>
+</div>
+<div class='footer'>
+<div class='LeftBox'>
+<a class="LeftBox_logo" href="/">Fly2Moon!</a>
+<ul class='LeftBox_lists'>
+<li><a class="LeftBox_lists-link active" href="/">Index</a></li>
+<li><a class="LeftBox_lists-link" href="/studys/total">Total</a></li>
+<li><a class="LeftBox_lists-link" href="/studys/month">Month</a></li>
+<li><a class="LeftBox_lists-link" href="/studys/week">Week</a></li>
+<li></li>
+</ul>
+</div>
+<div class='RightBox'>
+<a data-method="get" href="/users/sign_up"><i class="fa fa-user-circle fa-lg"></i></a>
+<a data-method="get" href="/users/sign_in"><i class="fa fa-sign-in fa-lg"></i></a>
+</div>
+</div>
+
+
+</body>
+</html>
