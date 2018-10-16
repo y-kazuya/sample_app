@@ -18,6 +18,9 @@ gem 'mini_magick',             '4.7.0'
 
 group :development, :test do
   gem 'byebug',  '9.0.6', platform: :mri
+  gem 'pry-rails'
+  gem 'pry-byebug'
+  gem 'pry-doc'
 end
 
 group :development do
