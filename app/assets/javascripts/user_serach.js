@@ -19,13 +19,12 @@ $(function(){
 
   $("#search").on("keyup",function(){
     var keyword = $(this).val()
-    var url = "/users/search";
     if (!keyword){
       target.empty()
     }
     else{
       $.ajax({
-        url: url,
+        url: "/users",
         type: "GET",
         data: {keyword: keyword},
         dataType: 'json'

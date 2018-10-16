@@ -6,15 +6,13 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
-  end
-
-  def search
-    @users = User.where('name LIKE ?', "%#{params[:keyword]}%").limit(10)
+    @s_users = User.where('name LIKE ?', "%#{params[:keyword]}%").limit(10) if params[:keyword]
     respond_to do |format|
+      format.html {@users = User.paginate(page: params[:page])}
       format.json
     end
   end
+
   def new
     @user = User.new
   end
@@ -87,4 +85,6 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
+
+
 end
