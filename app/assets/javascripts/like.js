@@ -36,9 +36,6 @@ $(function(){
         target.append(unlikehtml)
         form.remove()
       })
-      .fail(function(){
-        alert("error")
-      })
     })
   })
 

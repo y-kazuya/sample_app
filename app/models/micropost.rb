@@ -1,17 +1,13 @@
 class Micropost < ApplicationRecord
   belongs_to :user
   has_many :likes, dependent: :destroy
+  has_many :users, through: :likes
 
   mount_uploader :picture, PictureUploader
   default_scope -> { order(created_at: :desc) } #デフォルtの取り出しを照準に
   validates :user_id, presence: true
   validates :content, presence: true, length: { maximum: 140 }
   validate  :picture_size
-
-  def like_user(user)
-    likes.find_by(user_id: user.id).nil?
-  end
-
 
   private
 
