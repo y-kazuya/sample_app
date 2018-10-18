@@ -7,9 +7,22 @@
   </span>
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+    いいね<span class="like_count"><%= micropost.likes.count %></span>件
     <% if current_user?(micropost.user) %>
       <%= link_to "delete", micropost, method: :delete,
                                        data: { confirm: "You sure?" } %>
+    <% else %>
+      <% if micropost.likes.find_by(user_id: current_user.id)%>
+        <%= form_with url: like_path(micropost.likes.find_by(user_id: current_user.id).id), method: :delete, class: "unlike-form" do |f| %>
+          <%= f.hidden_field :micropost_id, value: micropost.id, class: "m_f" %>
+          <%= f.submit "いいね解除", class: "unlike-bo" %>
+        <% end %>
+      <% else %>
+        <%= form_with url: likes_path,class:"like-form", local: true do |f| %>
+          <%= f.hidden_field :micropost_id, value: micropost.id, class: "m_f" %>
+          <%= f.submit "いいね！", class: "like-bo"%>
+        <% end %>
+      <% end %>
     <% end %>
   </span>
 </li>
