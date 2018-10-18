@@ -7,11 +7,14 @@
         <%= render 'shared/stats' %>
       </section>
       <section class="micropost_form">
+
         <%= render 'shared/micropost_form' %>
       </section>
     </aside>
     <div class="col-md-8">
       <h3>Micropost Feed</h3>
+      <%= link_to "新着順", root_path%>
+      <%= link_to 'いいねのみ', root_path(sort: "iine") %>
       <%= render 'shared/feed' %>
     </div>
   </div>

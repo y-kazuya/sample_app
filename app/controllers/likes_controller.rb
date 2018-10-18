@@ -18,10 +18,12 @@ class LikesController < ApplicationController
 
   def destroy
     like = Like.find(params[:id])
-    like.destroy
-    respond_to do |format|
-      format.html
-      format.json
+    if like.user_id == current_user.id
+      like.destroy
+      respond_to do |format|
+        format.html
+        format.json
+      end
     end
 
   end
